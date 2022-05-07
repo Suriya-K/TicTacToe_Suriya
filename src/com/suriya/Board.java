@@ -1,6 +1,5 @@
 package com.suriya;
 
-
 public class Board {
 	private static int MAX_LENGHT = 3;
 	private int X = 1, O = 2;
@@ -20,18 +19,16 @@ public class Board {
 
 	private boolean checkRows() {
 		for (int i = 0; i < MAX_LENGHT; i++) {
-			if (checkEachrowcol(board[i][0], board[i][1], board[i][2]) == true) {
+			if (checkEachrowcol(board[i][0], board[i][1], board[i][2]))
 				return true;
-			}
 		}
 		return false;
 	}
 
 	private boolean checkColumns() {
 		for (int i = 0; i < MAX_LENGHT; i++) {
-			if (checkEachrowcol(board[0][i], board[1][i], board[2][i]) == true) {
+			if (checkEachrowcol(board[0][i], board[1][i], board[2][i]))
 				return true;
-			}
 		}
 		return false;
 	}
