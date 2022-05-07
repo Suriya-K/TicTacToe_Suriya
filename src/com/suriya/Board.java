@@ -21,12 +21,7 @@ public class Board {
 		board = _board;
 	}
 
-	public boolean checkWin() {
-		if (checkRows() || checkColumns() || checkDiagonals()) {
-			return true;
-		}
-		return false;
-	}
+
 
 	public boolean isFull() {
 		for (int i = 0; i < MAX_LENGHT; i++) {
@@ -40,6 +35,12 @@ public class Board {
 	}
 
 	// private
+	private boolean checkWin() {
+		if (checkRows() || checkColumns() || checkDiagonals()) {
+			return true;
+		}
+		return false;
+	}
 
 	private boolean checkRows() {
 		for (int i = 0; i < MAX_LENGHT; i++) {

@@ -28,7 +28,7 @@ public class Main {
 
 	private static void checkResult(Board board) {
 		board.setBoard(inputBoard);
-		System.out.printf("\nOutput : %s", board.checkWin());
+		System.out.printf("\nOutput : %s", board.getWinner());
 	}
 
 }
